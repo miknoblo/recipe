@@ -568,6 +568,7 @@ footer h3 {
         padding-top: 0px;
         width: 768px;
         flex-wrap: wrap;
+        text-align: center;
     }
     
     #side-dish div{
