@@ -1,0 +1,763 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS */
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+
+body {
+    width: 414px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: none;
+}
+
+aside {
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 414px;
+    z-index: 200;
+    flex-wrap: wrap;
+}
+
+nav {
+    height: 75px;
+    background-color: #ffffff;
+    width: 100px;
+}
+
+nav label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    z-index: 200;
+    height: 75px;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    color:#EB5428;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 300;
+}
+
+nav a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5px;
+}
+
+nav input {
+    display: none;
+}
+
+nav input:checked ~ ul {
+    max-height: 600px;
+    width: 100px;
+    background-color:#ffffff;
+}
+
+nav li img {
+    width: 40px;
+}
+
+nav li svg {
+    width: 40px;
+}
+
+#logo {
+    position:absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75px;
+    width: 414px;
+    z-index: -100;
+    background-color: #EB5428;
+}
+
+#logo a {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo svg {
+    height: 75px;
+    width: 50px;
+}
+
+#logo p {
+    display: none;
+}
+
+#sign-in {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #ffffff;
+    height: 75px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color:#0D0D0D;
+}
+
+#sign-in svg {
+    width: 40px;
+    stroke: #EB5428;
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 415px;
+    padding-top: 20px;
+    z-index: -100;
+}
+
+#search-bar span {
+    display: none;
+}
+
+#search-bar input {
+    width: 260px;
+    border-width: 2px;
+    border-color: #EB5428;
+    border-style: solid;
+}
+
+#search-bar label {
+    background-color: #EB5428;
+}
+
+#search-bar svg {
+    stroke: #ffffff;
+}
+
+#street-tacos {
+    padding-top: 180px;
+}
+
+#street-tacos img {
+    width: 414px;
+    padding-top: 15px;
+}
+
+#street-tacos p {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    color:#EB5428;
+    padding-top: 25px;
+}
+
+menu li {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+menu svg {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+section {
+    line-height: 1.5em;
+}
+
+#ingredients {
+    padding-left: 10px;
+    line-height: 2em;
+}
+
+#ingredients ul {
+    padding-left: 15px;
+    list-style-type: square;
+}
+
+#details dl {
+    width: 414px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+
+dt {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+#details dt {
+    flex: 80px;
+}
+
+#details dd {
+    flex: 260px;
+}
+
+ol {
+    padding-left: 30px;
+}
+
+ol li {
+    padding: 10px;
+}
+
+#side-dish {
+    background-color: #7ABFBF;
+}
+
+#side-dish section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 15px;
+    justify-items: start;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100px;
+    padding: 15px;
+}
+
+#side-dish img {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 100px;
+}
+
+#side-dish h3 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 30px;
+}
+
+#side-dish dt {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#side-dish dd {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#side-dish p {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+#side-dish span {
+    display: none;
+}
+
+#side-dish svg {
+    fill:#EB5428;
+    stroke:#ffffff;
+}
+
+#side-dish > div > section > dl > dd > svg:nth-child(6){
+    fill:#ffffff;
+}
+
+#side-dish > div > section:nth-child(3) > dl > dd > svg:nth-child(6){
+    fill:#EB5428;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+footer p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+footer img {
+    width: 200px;
+    padding: 15px;
+}
+
+footer h3 {
+    display: none;
+}
+
+#social {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+#social h2, #social h3 {
+    display: none;
+}
+
+#social ul {
+    color:#EB5428;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+}
+
+#social li {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+#social svg {
+    margin: 0 auto;
+}
+
+#copy {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        width: 768px;
+    }
+
+    aside {
+        width: 768px;
+        background-color: #ffffff;
+    }
+
+    #street-tacos img {
+        width: 768px;
+    }
+
+    nav {
+        display: flex;
+        width: 768px;
+        flex-wrap: wrap;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    nav ul {
+        max-width: 768px;
+        max-height: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        padding-top: 0px;
+        justify-content: space-around;
+        list-style-type: none;
+        height: 180px;
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100px;
+    }
+
+    nav li img {
+        width: 60px;
+    }
+
+    #logo {
+        position:relative;
+        top: 0px;
+        left: 0px;
+        width: 768px;
+        background-color: #ffffff;
+        align-items: flex-start;
+    }
+
+    #logo a {
+        width: 75px;
+        height: 75px;
+        background-color:#EB5428;
+    }
+
+    #search-bar {
+        position: absolute;
+        top: 0px;
+        right: 100px;
+        z-index: 300;
+        width: 300px;
+    }
+
+    #street-tacos {
+        padding-top: 180px;
+    }
+
+    h1 {
+        padding-top: 30px;
+        text-align: left;
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+
+
+    menu {
+        background:rgba(255, 255, 255, .7);
+        padding-top: 0px;
+        position: absolute;
+        top: 254px;
+        z-index: 300;
+        height: 100px;
+        width: 768px;
+    }
+
+    #details {
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    #details dl {
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding-left: 40px;
+    }
+
+    #details dd {
+        grid-column: 2;
+    } 
+
+    #details dt {
+        grid-column: 1;
+    } 
+
+    #ingredients h2 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #ingredients {
+        display: inline-block;
+        padding-left: 40px;
+    }
+
+    #directions {
+        display: inline-block;
+        width: 500px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #directions h2 {
+        padding-top: 0px;
+        width: 768px;
+        flex-wrap: wrap;
+    }
+    
+    #side-dish div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (min-width:1280px) {
+    
+    body {
+        width: 1280px;
+    }
+
+    aside {
+        width: 1280px;
+        height: 100px;
+    }
+
+    nav {
+        width: 1280px;
+    }
+
+    nav ul {
+        width: 1180px;
+        max-width: 1280px;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 100px;
+    }
+
+    #logo a {
+        height: 100px;
+    }
+
+    #sign-in {
+        height: 100px;
+        align-items: center;
+    }
+
+    #search-bar {
+        position:static;
+        justify-content: center;
+        width: 1280px;
+        padding-top: 50px;
+    }
+
+    #street-tacos {
+        display: flex;
+        width: 1280px;
+        padding-top: 220px;
+    }
+
+    h1 {
+        width: 1280px;
+        position: absolute;
+        top: 160px;
+        display: flex;
+        justify-content: center;
+    }
+
+    menu {
+        flex-direction: column;
+        height: 821px;
+        position: static;
+        max-width: 100px;
+        border-style: solid;
+        border-color: #EB5428;
+        border-width: 2px;
+    }
+
+    #street-tacos {
+        padding-top: 240px;
+    }
+
+    #street-tacos img {
+        padding-top: 0px;
+        width: 550px;
+        height:max-content;
+    }
+
+    #street-tacos p {
+        display: flex;
+        line-height: 2em;
+    }
+
+    #details {
+        width: 1280px;
+        background-color: #0D0D0D;
+        color:#7ABFBF;
+        padding-bottom: 15px;
+    }
+
+    #details dl {
+        width: 1280px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    #details dt {
+        grid-row: 1;
+        grid-column: auto;
+    }
+
+    #details dd {
+        grid-row: 2;
+        grid-column: auto;
+    }
+
+    #directions {
+        width: 1000px;
+        justify-content: left;
+        vertical-align: top;
+    }
+
+    #directions h2 {
+        width: 1020px;
+    }
+
+    #side-dish {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+    }
+
+    #side-dish div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    #side-dish section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #side-dish img {
+        width: 250px;
+        height: max-content;
+        order: 1;
+        padding-bottom: 10px;
+    }
+
+    #side-dish h3 {
+        order: 2;
+    }
+
+    #side-dish p {
+        order:3;
+    }
+
+    #side-dish dl {
+        order:3;
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+
+    #social {
+        width: 600px;
+    }
+
+    #copy {
+        width: 600px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    #copy p {
+        align-self: baseline;
+        padding-top: 30px;
+    }
+}
+
